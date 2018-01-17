@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/general">
+
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_alignParentRight="true"
+        android:layout_width="16dp"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/kep"
+            android:paddingTop="6dp"
+            android:paddingLeft="26dp"
+            android:src="@drawable/var"
+            android:layout_width="110dp"
+            android:layout_height="110dp" />
+
+        <LinearLayout
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview5"
+                android:text="Baretti"
+                android:gravity="bottom"
+                android:textColor="@color/colorBackground"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+
+            <View
+                android:layout_width="220dp"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorPrimary" />
+
+
+            <TextView
+                android:id="@+id/textview6"
+                android:text="Click"
+                android:gravity="top|bottom"
+                android:textColor="@color/colorBackground"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
