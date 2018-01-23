@@ -29,7 +29,7 @@
             android:id="@+id/general_image"
             android:paddingTop="6dp"
             android:paddingLeft="26dp"
-            android:src="@drawable/baretti"
+            tools:src="@drawable/baretti"
             android:layout_width="110dp"
             android:layout_height="110dp" />
 
@@ -42,7 +42,7 @@
 
             <TextView
                 android:id="@+id/textview1"
-                android:text="Baretti"
+                tools:text="Baretti"
                 android:gravity="bottom"
                 android:textColor="@color/colorBackground"
                 android:textSize="18sp"
@@ -52,7 +52,7 @@
 
             <TextView
                 android:id="@+id/textview2"
-                android:text="Bulevardul Decebal Nr.60"
+                tools:text="Bulevardul Decebal Nr.60"
                 android:gravity="bottom"
                 android:textColor="@color/colorBackground"
                 android:textSize="14sp"
@@ -67,10 +67,9 @@
                 android:layout_marginTop="8dp"
                 android:background="@color/colorPrimary" />
 
-
             <TextView
                 android:id="@+id/textview3"
-                android:text="+40 771 208 323"
+                tools:text="+40 771 208 323"
                 android:gravity="bottom"
                 android:layout_marginBottom="1dp"
                 android:textColor="@color/colorBackground"
@@ -81,7 +80,7 @@
 
             <TextView
                 android:id="@+id/textview4"
-                android:text="www.baretti.ro"
+                tools:text="www.baretti.ro"
                 android:gravity="bottom"
                 android:layout_marginBottom="5dp"
                 android:textColor="@color/colorBackground"
@@ -90,9 +89,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp" />
 
-
         </LinearLayout>
 
-
     </LinearLayout>
+
 </RelativeLayout>

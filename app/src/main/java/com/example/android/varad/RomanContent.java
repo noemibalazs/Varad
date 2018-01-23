@@ -22,6 +22,4 @@ public class RomanContent {
     public String getEnglishId(){ return  mEnglishId;}
 
     public int getAudioId(){ return mAudioId;}
-
-
 }

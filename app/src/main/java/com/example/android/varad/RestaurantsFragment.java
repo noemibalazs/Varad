@@ -19,7 +19,6 @@ public class RestaurantsFragment extends Fragment {
     public RestaurantsFragment(){
     }
 
-
     @Override
     @Nullable
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {

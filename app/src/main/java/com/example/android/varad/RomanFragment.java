@@ -15,8 +15,6 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-import static android.content.Context.AUDIO_SERVICE;
-
 /**
  * Created by Noemi on 12/8/2017.
  */
@@ -60,8 +58,6 @@ public class RomanFragment extends Fragment {
 
         mAudioManager = (AudioManager) getActivity().getSystemService(Context.AUDIO_SERVICE);
 
-
-
        final ArrayList<RomanContent>contents = new ArrayList<RomanContent>();
 
         contents.add(new RomanContent("Unde este cea mai apropiata sectie de politie?", "Where is the nearest police station?", R.raw.politie));
@@ -74,7 +70,7 @@ public class RomanFragment extends Fragment {
 
         RomanContentAdaptor adapter = new RomanContentAdaptor(getActivity(), contents);
 
-        ListView listView = (ListView)rootView.findViewById(R.id.general_item);
+        ListView listView = rootView.findViewById(R.id.general_item);
 
         listView.setAdapter(adapter);
 
@@ -94,7 +90,6 @@ public class RomanFragment extends Fragment {
                 }
             }
         });
-
 
         return rootView;
     }

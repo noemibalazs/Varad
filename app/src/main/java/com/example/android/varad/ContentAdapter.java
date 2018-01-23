@@ -3,8 +3,6 @@ package com.example.android.varad;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,13 +29,13 @@ public class ContentAdapter extends ArrayAdapter<Content> {
 
             Content myContent = getItem(position);
 
-        TextView textView1 = (TextView)listItemView.findViewById(R.id.textview1);
+        TextView textView1 = listItemView.findViewById(R.id.textview1);
         textView1.setText(myContent.getNameId());
 
-        TextView textView2 = (TextView)listItemView.findViewById(R.id.textview2);
+        TextView textView2 = listItemView.findViewById(R.id.textview2);
         textView2.setText(myContent.getAddressId());
 
-        TextView textView3 = (TextView)listItemView.findViewById(R.id.textview3);
+        TextView textView3 = listItemView.findViewById(R.id.textview3);
         textView3.setText(myContent.getTelephoneId());
         textView3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,12 +49,12 @@ public class ContentAdapter extends ArrayAdapter<Content> {
             }
         });
 
-        TextView textView4 = (TextView)listItemView.findViewById(R.id.textview4);
+        TextView textView4 = listItemView.findViewById(R.id.textview4);
         textView4.setText(myContent.getWebPageId());
         textView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TextView textView4 = (TextView)view.findViewById(R.id.textview4);
+                TextView textView4 = view.findViewById(R.id.textview4);
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("http:" + textView4.getText()));
                 if (intent.resolveActivity(getContext().getPackageManager()) != null) {
@@ -65,7 +63,7 @@ public class ContentAdapter extends ArrayAdapter<Content> {
             }
         });
 
-        ImageView imageView1 = (ImageView)listItemView.findViewById(R.id.general_image);
+        ImageView imageView1 = listItemView.findViewById(R.id.general_image);
         imageView1.setImageResource(myContent.getImageId());
 
      return listItemView;

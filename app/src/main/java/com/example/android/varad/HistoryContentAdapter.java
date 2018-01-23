@@ -2,10 +2,7 @@ package com.example.android.varad;
 
 import android.content.Context;
 import android.content.Intent;
-import android.media.Image;
-import android.net.Uri;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import android.net.Uri;;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,15 +29,15 @@ public class HistoryContentAdapter extends ArrayAdapter<HistoryContent> {
 
         HistoryContent myHistoryContent = getItem(position);
 
-        TextView textView5 = (TextView)listItemView.findViewById(R.id.textview5);
+        TextView textView5 = listItemView.findViewById(R.id.textview5);
         textView5.setText(myHistoryContent.getTurId());
 
-        TextView textView6 = (TextView)listItemView.findViewById(R.id.textview6);
+        TextView textView6 = listItemView.findViewById(R.id.textview6);
         textView6.setText(myHistoryContent.getWebId());
         textView6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                TextView textView6 = (TextView)view.findViewById(R.id.textview6);
+                TextView textView6 = view.findViewById(R.id.textview6);
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("http://" + textView6.getText()));
                 if (intent.resolveActivity(getContext().getPackageManager()) != null) {
@@ -49,11 +46,8 @@ public class HistoryContentAdapter extends ArrayAdapter<HistoryContent> {
             }
         });
 
-        ImageView imageView2 = (ImageView) listItemView.findViewById(R.id.kep);
+        ImageView imageView2 = listItemView.findViewById(R.id.kep);
         imageView2.setImageResource(myHistoryContent.getImageHistoryId());
-
-
-
 
       return listItemView;
     }

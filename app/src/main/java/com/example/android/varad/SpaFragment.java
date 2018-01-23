@@ -19,8 +19,6 @@ public class SpaFragment extends Fragment {
     public SpaFragment(){
 
     }
-
-
     @Override
     @Nullable
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
@@ -35,10 +33,9 @@ public class SpaFragment extends Fragment {
 
         ContentAdapter adapter = new ContentAdapter(getActivity(), content);
 
-        ListView listView = (ListView)rootView.findViewById(R.id.general_item);
+        ListView listView = rootView.findViewById(R.id.general_item);
 
         listView.setAdapter(adapter);
-
 
         return rootView;
     }

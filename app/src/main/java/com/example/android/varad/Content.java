@@ -1,8 +1,5 @@
 package com.example.android.varad;
 
-import android.content.Context;
-
-import java.net.PortUnreachableException;
 
 /**
  * Created by Noemi on 12/5/2017.
