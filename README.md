@@ -4,9 +4,10 @@ This is stage 3 of Android Basic Nanodegree.
 
 Learnings:
 
-Design an implement a quiz application
-Write the code for the button which checks the user answers
-Display the quiz results in a Toast message
+1. Design an implement a tour guid application
+2. Navigation between lists in Fragments using ViewPager plus TabLayout
+3. Handling images and audio
+
 Screenshot:
 
 
